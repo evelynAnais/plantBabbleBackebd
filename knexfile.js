@@ -4,7 +4,7 @@ const { DATABASE_URL } = process.env;
 module.exports = {
 
   development: {
-    client: 'sqlite3',
+    client: 'postgresql',
     connection: DATABASE_URL,
   },
 
