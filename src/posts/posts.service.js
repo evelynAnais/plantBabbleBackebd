@@ -1,5 +1,9 @@
 const knex = require('../db/connection');
 
-module.exports = {
+function list() {
+  return knex('users').select('*')
+}
 
+module.exports = {
+  list,
 }
